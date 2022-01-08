@@ -1,0 +1,157 @@
+@import "/css/variables.css"; 
+body{
+    height: 100vh;
+    background: url(/images/kiwihug-y_2GC4EhOP4-unsplash_background.jpg);
+    background-repeat: repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-light .navbar-toggler,
+.navbar-light .navbar-toggler-icon{
+    border: none;
+    color: var(--dark-blue);
+    font-size: 1.8rem;
+}
+.nav-link{
+    font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--shallow);
+}
+div{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.footer{
+    height: 100px;
+    margin-top: 1%;
+   background: url(/images/Logo.png);
+   background-size: contain; 
+}
+.btn-outline-success{
+    font-weight: 400;    
+    border-color: var(--shallow);
+        color: var(--shallow);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--dark-blue);
+        text-shadow: 3px 3px var(--shadow);
+        font-family: 'Source Serif 4', sans-serif;
+}
+.btn-outline-success:hover{
+    background-color: var(--dark-blue);
+        color: var(--orange);
+        text-shadow: 3px 3px var(--shadow);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--dark-orange);
+        border-color: var(--dark-blue);
+}
+.btn-primary{
+    background-color: var(--dark-blue);
+    color: var(--sand);
+    text-shadow: 3px 3px var(--shadow);
+    font-weight: 500;
+    font-size: 1.8rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--sand);
+    font-family: 'Source Serif 4', sans-serif;
+    box-shadow: 5px 5px 5px var(--dark-blue);
+    padding: 1.2%;
+    text-align: center;
+    border-color: var(--dark-blue);
+    margin: 2% auto;
+}
+.btn-primary:hover{
+    background-color: white;
+    border-color: var(--dark-blue);
+    color: var(--dark-blue);
+    -webkit-text-stroke-color: var(--dark-blue);
+    text-shadow: 3px 3px var(--shadow);
+}
+@media (max-width:768px) {
+    .mobile-banner{
+        width: 100%;
+    }
+    .desktop-banner{
+        display: none;
+    }
+    .btn-primary{
+        width: 99%;
+    }
+    .text{
+        display: none;
+    }
+}
+@media (min-width:769px) {
+    .mobile-banner{
+        display: none;
+    }
+    ul{
+        width: 640px;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        border: 2px var(--light-orange);
+        border-radius: 3px;
+        text-shadow: 3px 3px var(--shadow);
+        font-size: 1.2rem;
+        box-shadow: 5px 5px 5px var(--dark-blue);
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding: .9rem 1.6rem;
+    }
+    .navbar-expand-lg .navbar-collapse{
+        background-color: var(--sand);
+        opacity: 0.8;
+        margin-bottom: 4%;
+        justify-content: space-evenly;
+        flex-basis: 0;
+        font-family: 'Source Serif 4', sans-serif;
+    }
+    .nav-item{
+        margin-right: 5%;
+    }
+    .navbar-light .navbar-nav .nav-link.disabled{
+        color: var(--shallow) !important;
+    } 
+    .navbar-light .navbar-nav .nav-link.active{
+        text-decoration: underline;
+    }
+    .navbar-light .navbar-nav .nav-link.active:hover{
+        background: white;
+        border: 2px;
+        border-color: var(--dark-orange);
+        color: var(--dark-orange);
+    }
+    .sections{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items:stretch;
+    }
+    .dinning-room,
+    .inspiration{
+        grid-column: 2;
+    }
+    .btn-section_dinning-room{
+        grid-row: 2;
+    }
+    .btn-section_dinning-room,
+    .btn-section_inspiration{
+        grid-column: 1;
+    }
+    .btn-section_inspiration{
+        grid-row: 4;
+    }
+    .btn-section,
+    .btn-section_dinning-room,
+    .btn-section_inspiration{
+        max-width: 500px;
+        margin: 5% auto;
+    }
+    p{
+        margin: 10% auto;
+    }
+    .btn-primary{
+        width: 80%;
+        padding: 3%;
+    }
+}
