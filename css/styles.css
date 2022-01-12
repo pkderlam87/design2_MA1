@@ -23,6 +23,15 @@ div{
 img{
     max-width: 100%;
 }
+.kitchen{
+    cursor: pointer;
+    filter:sepia(0.2);
+    filter: drop-shadow(2px 2px 20px var(--dark-blue));
+}
+.kitchen:hover{
+    filter:contrast(110%);
+    filter: drop-shadow(1px 1px 10px var(--dark-blue));
+}
 .footer{
     height: 100px;
     margin-top: 1%;
@@ -46,7 +55,8 @@ img{
         -webkit-text-stroke-color: var(--dark-orange);
         border-color: var(--dark-blue);
 }
-.btn-primary{
+.btn-primary,
+.btn-primary.disabled{
     background-color: var(--dark-blue);
     color: var(--sand);
     text-shadow: 3px 3px var(--shadow);
@@ -75,7 +85,8 @@ img{
     .desktop-banner{
         display: none;
     }
-    .btn-primary{
+    .btn-primary,
+    .btn-primary.disabled{
         width: 99%;
     }
     .text{
@@ -110,7 +121,8 @@ img{
     .nav-item{
         margin-right: 5%;
     }
-    .navbar-light .navbar-nav .nav-link.disabled{
+    .navbar-light .navbar-nav .nav-link.disabled,
+    .navbar-light .navbar-nav .nav-link{
         color: var(--shallow) !important;
     } 
     .navbar-light .navbar-nav .nav-link.active{
@@ -150,7 +162,8 @@ img{
     p{
         margin: 10% auto;
     }
-    .btn-primary{
+    .btn-primary,
+    .btn-primary.disabled{
         width: 80%;
         padding: 3%;
     }
