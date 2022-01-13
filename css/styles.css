@@ -78,6 +78,11 @@ img{
     -webkit-text-stroke-color: var(--dark-blue);
     text-shadow: 3px 3px var(--shadow);
 }
+/*Products page*/
+.carousel{
+    max-width: 50%;
+    filter: drop-shadow(2px 2px 20px var(--dark-blue));
+}
 @media (max-width:768px) {
     .mobile-banner{
         width: 100%;
