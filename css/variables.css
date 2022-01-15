@@ -1,11 +1,11 @@
 :root{
-    --dark-blue:#72858C;
-    --orange: #CFBBB4;
-    --light-cyan: #D0DBD7;
-    --sand:#ebdecb;
-    --green: #B7C4BD;
+    --dark-blue:#72858c;
+    --orange: rgb(207, 187, 180);
+    --light-cyan: rgb(208, 219, 215);
+    --sand:rgb(235, 222, 203);
+    --green: rgb(183, 196, 189);
     --dark-orange: #9c8177;
     --shadow: rgba(0, 0, 0, 0.048);
     --shallow:#344c55;
-    --light-orange: #DAC7BC;
+    --light-orange: rgb(218, 199, 188);
 }

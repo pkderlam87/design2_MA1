@@ -1,6 +1,8 @@
 @import "/css/variables.css"; 
-body{
+html, body{
     height: 100vh;
+}
+body{
     background: url(/images/kiwihug-y_2GC4EhOP4-unsplash_background.jpg);
     background-repeat: repeat;
     font-family: 'Montserrat', sans-serif;
@@ -79,9 +81,20 @@ img{
     text-shadow: 3px 3px var(--shadow);
 }
 /*Products page*/
+.product-carousel{
+    width: 70%;
+}
 .carousel{
-    max-width: 50%;
+    position: relative;
     filter: drop-shadow(2px 2px 20px var(--dark-blue));
+}
+.favorite-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    box-shadow: none;
+    border: none;
 }
 @media (max-width:768px) {
     .mobile-banner{
