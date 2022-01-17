@@ -1,0 +1,36 @@
+@import "/css/variables.css"; 
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.btn-outline-success,
+.btn-primary,
+.btn-primary.disabled,
+.navbar-expand-lg .navbar-collapse{
+    font-family: 'Source Serif 4', sans-serif;;
+}
+.navbar-light .navbar-toggler,
+.navbar-light .navbar-toggler-icon{
+    font-size: 1.8rem;
+}
+.nav-link{
+    font-weight: 700;
+}
+.btn-outline-success{
+    font-weight: 400; 
+}
+.btn-primary,
+.btn-primary.disabled{
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+h1{
+    font-family: 'embury-text', serif;;
+    font-weight: 300;
+}
+/*TABLET AND DESKTOP VERSION */
+@media (min-width:769px) {
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 1.2rem;
+    }
+}
