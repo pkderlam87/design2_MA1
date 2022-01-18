@@ -32,8 +32,8 @@ img{
 .footer{
     height: 100px;
     margin-top: 1%;
-   background: url(/images/Logo.png);
-   background-size: contain; 
+    background: url(/images/Logo.png);
+    background-size: contain; 
 }
 .btn-outline-success{
     border-color: var(--shallow);
