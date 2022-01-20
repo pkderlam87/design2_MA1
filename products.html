@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Source+Serif+4:wght@400;800;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/sgs2cbs.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.typekit.net/sgs2cbs.css">
+    <script src="https://kit.fontawesome.com/1dd9a9266b.js" crossorigin="anonymous"></script>
     <link href="css/fonts.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <title>Home Decor</title>
@@ -23,12 +25,24 @@
 <body>
     <header>
         <div>
-            <img src="/images/Mobile_banner.jpg"
-                alt="Two flower pots in the background with the inscription 'Home Decor - a touch of love to your home sweet home' in the first plane."
-                class="mobile-banner">
-            <img src="/images/Desktop_banner.jpg"
-                alt="Two flower pots in the background with the inscription 'Home Decor - a touch of love to your home sweet home' in the first plane."
-                class="desktop-banner">
+            <a href="/index.html"><img src="/images/Mobile_banner.jpg"
+                    alt="Two flower pots in the background with the inscription 'Home Decor - a touch of love to your home sweet home' in the first plane."
+                    class="mobile-banner"></a>
+            <a href="/index.html"><img src="/images/Desktop_banner.jpg"
+                    alt="Two flower pots in the background with the inscription 'Home Decor - a touch of love to your home sweet home' in the first plane."
+                    class="desktop-banner"></a>
+        </div>
+        <div class="contact">
+            <div><a href="tel:+4799999999"><i class="fas fa-phone fa-2x"></i></a><span class="link"> +47
+                    9999.9999</span></div>
+            <div><a href="mailto: hello@homedecor.com"><i class="fas fa-envelope-open-text fa-2x"></i></a><a
+                    href="mailto: hello@homedecor.com" class="link">
+                    hello@homedecor.com</a>
+            </div>
+            <div><a href="https://goo.gl/maps/apmuXRsHLpVLutgT8"><i class="fas fa-map-marked-alt fa-2x"></i></a><a
+                    href="https://goo.gl/maps/apmuXRsHLpVLutgT8" class="link">
+                    Sverres gate, 15
+                    - Trondheim/NO</a></div>
         </div>
     </header>
     <main>
@@ -62,63 +76,97 @@
                 </div>
             </div>
         </nav>
-        <div class="product-carousel">
-            <div id="carouselExampleIndicators" class="carousel carousel-dark slide carousel-fade"
-                data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+        <div class="specif-product">
+            <div class="product-carousel">
+                <div id="carouselExampleIndicators" class="carousel carousel-dark slide carousel-fade"
+                    data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/rustic-brown-ceramic-baking-dish.jpg" class="d-block w-100"
+                                alt="A rustic brown ceramic baking dish">
+                            <div>
+                                <button class="favorite-icon"><img src="/images/icons/fas fa-flower.png"
+                                        alt="Favorite icon unchecked"></button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/rustic-brown-ceramic-baking-dish-empty.jpg" class="d-block w-100"
+                                alt="A rustic brown ceramic baking dish">
+                            <div>
+                                <button class="favorite-icon"><img src="/images/icons/fa fa-flower.png"
+                                        alt="Favorite icon checked"></button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/rustic-brown-ceramic-baking-dish-empty-without-background.png"
+                                class="d-block w-100" alt="A rustic brown ceramic baking dish">
+                            <div>
+                                <button class="favorite-icon"><img src="/images/icons/fas fa-flower.png"
+                                        alt="Favorite icon unchecked"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/images/rustic-brown-ceramic-baking-dish.jpg" class="d-block w-100"
-                            alt="A rustic brown ceramic baking dish">
-                        <div>
-                            <button class="favorite-icon"><img src="/images/icons/fas fa-flower.png"
-                                    alt="Favorite icon unchecked"></button>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/images/rustic-brown-ceramic-baking-dish-empty.jpg" class="d-block w-100"
-                            alt="A rustic brown ceramic baking dish">
-                        <div>
-                            <button class="favorite-icon"><img src="/images/icons/fa fa-flower.png"
-                                    alt="Favorite icon checked"></button>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/images/rustic-brown-ceramic-baking-dish-empty-without-background.png"
-                            class="d-block w-100" alt="A rustic brown ceramic baking dish">
-                        <div>
-                            <button class="favorite-icon"><img src="/images/icons/fas fa-flower.png"
-                                    alt="Favorite icon unchecked"></button>
-                        </div>
-                    </div>
+            </div>
+            <div>
+                <h1 class="product-title">Rustic ceramic baking dish</h1>
+                <div class="quantities">
+                    <label for="quantities">
+                        <h3>How many?</h3>
+                    </label>
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-sm example"
+                        id="quantities">
+                        <option selected value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="total">
+                    <h3 class="product-total">Total: <span id="total_number"></span></h3>
+                </div>
             </div>
         </div>
     </main>
     <footer>
+        <div class="social-media">
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-twitter-square fa-2x"></i>
+            <i class="fab fa-instagram-square fa-2x"></i>
+            <i class="fab fa-whatsapp-square fa-2x"></i>
+            <i class="fab fa-telegram fa-2x"></i>
+        </div>
         <div class="footer"></div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/total.js"></script>
 </body>
 
 </html>

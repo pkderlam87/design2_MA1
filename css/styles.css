@@ -29,6 +29,9 @@ img{
     filter:contrast(110%);
     filter: drop-shadow(1px 1px 10px var(--dark-blue));
 }
+footer{
+    margin-top: 10%;
+}
 .footer{
     height: 100px;
     margin-top: 1%;
@@ -70,10 +73,13 @@ img{
     -webkit-text-stroke-color: var(--dark-blue);
     text-shadow: 3px 3px var(--shadow);
 }
-/*Products page*/
-.product-carousel{
-    width: 70%;
+.social-media,
+.contact{
+    display: flex;
+    justify-content: space-around;
 }
+/*Products page*/
+
 .carousel{
     position: relative;
     filter: drop-shadow(2px 2px 20px var(--dark-blue));
@@ -86,6 +92,23 @@ img{
     box-shadow: none;
     border: none;
 }
+.btn-section,
+.btn-section_dinning-room{
+    margin: 0.2% auto 5% auto;
+}
+.product-title{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+.quantities,
+.product-total{
+    margin: 10% 2% 5% 2%;
+}
+.form-select{
+    width: 90%;
+}
+/* MOBILE VERSION */
 @media (max-width:768px) {
     .mobile-banner{
         width: 100%;
@@ -100,7 +123,11 @@ img{
     .text{
         display: none;
     }
+    .link{
+        display: none;
+    }
 }
+/* DESKTOP AND TABLET VERSION*/
 @media (min-width:769px) {
     .mobile-banner{
         display: none;
@@ -141,6 +168,8 @@ img{
         color: var(--dark-orange);
     }
     .sections{
+        max-width: 97%;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1%;
@@ -173,5 +202,16 @@ img{
     .btn-primary.disabled{
         width: 80%;
         padding: 3%;
+    }
+    /*PRODUCT PAGE*/
+    .specif-product{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3%;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-select{
+        width: 50%;
     }
 }

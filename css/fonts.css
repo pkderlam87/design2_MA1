@@ -9,7 +9,7 @@ body{
 .btn-primary,
 .btn-primary.disabled,
 .navbar-expand-lg .navbar-collapse{
-    font-family: 'Source Serif 4', sans-serif;;
+    font-family: 'Source Serif 4', sans-serif;
 }
 .navbar-light .navbar-toggler,
 .navbar-light .navbar-toggler-icon{
@@ -34,6 +34,21 @@ h5,
 h6{
     font-family: 'embury-text', serif;;
     font-weight: 300;
+}
+i,
+.link{
+    color: var(--shallow);
+}
+.link{
+    font-family: 'source-sans-3', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.link:hover{
+    color: var(--dark-blue);
+}
+.fas{
+    font-size: 1.6rem;
 }
 /*TABLET AND DESKTOP VERSION */
 @media (min-width:769px) {
