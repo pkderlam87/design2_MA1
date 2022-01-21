@@ -55,7 +55,7 @@ footer{
 }
 .btn-primary,
 .btn-primary.disabled{
-    background-color: var(--dark-blue);
+    background-color: var(--shallow);
     color: var(--sand);
     text-shadow: 3px 3px var(--shadow);
     -webkit-text-stroke-width: 1px;
@@ -79,7 +79,6 @@ footer{
     justify-content: space-around;
 }
 /*Products page*/
-
 .carousel{
     position: relative;
     filter: drop-shadow(2px 2px 20px var(--dark-blue));
@@ -109,7 +108,7 @@ footer{
     width: 90%;
 }
 /* MOBILE VERSION */
-@media (max-width:768px) {
+@media (max-width:767px) {
     .mobile-banner{
         width: 100%;
     }
@@ -126,8 +125,17 @@ footer{
     .link{
         display: none;
     }
+    .flower{
+        width:80%;
+    }
 }
-/* DESKTOP AND TABLET VERSION*/
+/*TABLET VERSION*/
+@media (min-width:481px) and (max-width:768px){
+    .flower{
+        width:90%;
+    }
+}
+/* DESKTOP VERSION*/
 @media (min-width:769px) {
     .mobile-banner{
         display: none;
@@ -146,10 +154,14 @@ footer{
     }
     .navbar-expand-lg .navbar-collapse{
         background-color: var(--sand);
-        opacity: 0.8;
+        opacity: 1;
         margin-bottom: 4%;
         justify-content: space-evenly;
         flex-basis: 0;
+    }
+    .navbar > .container-fluid{
+        margin: 1% 0 !important;
+        width: 100%;
     }
     .nav-item{
         margin-right: 5%;
